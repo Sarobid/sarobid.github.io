@@ -29,7 +29,14 @@
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
     </head>
+<style>
 
+#acceuil .header-carousel-item img {
+    filter: none !important; /* Enlève tout filtre appliqué à l'image */
+    opacity: 1 !important; /* Rétablit l'opacité originale de l'image */
+}
+
+</style>
     <body>
 
         <!-- Spinner Start -->
@@ -82,7 +89,7 @@
         <!-- Navbar & Hero End -->
         <div id="acceuil" class="header-carousel owl-carousel">
           <div class="header-carousel-item">
-              <img src="img/carousel-1.jpg" class="img-fluid w-100" alt="Image">
+              <img src="img/carousel-1.jpeg" class="img-fluid w-100" alt="Image">
               <div class="carousel-caption">
                   <div class="container">
                       <div class="row g-5">
