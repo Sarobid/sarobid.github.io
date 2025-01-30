@@ -1,0 +1,20 @@
+.ecran{
+    border: 2px solid blueviolet;
+    width: 75%;  /* Prend toute la largeur disponible */
+    height: 400px; /* Ajuste la hauteur selon tes besoins */
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour le voir même vide */
+    border-radius: 15px; /* Coins arrondis pour un effet écran */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     margin-top: 70px; /* Hauteur de la topbar + navbar */
+}
+
+.contentecran{
+  /* Full height */
+  height: 100vh;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
