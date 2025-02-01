@@ -1,20 +1,53 @@
-.ecran{
-    border: 2px solid blueviolet;
-    width: 75%;  /* Prend toute la largeur disponible */
-    height: 400px; /* Ajuste la hauteur selon tes besoins */
-    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour le voir même vide */
-    border-radius: 15px; /* Coins arrondis pour un effet écran */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-     margin-top: 70px; /* Hauteur de la topbar + navbar */
+
+
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
 }
 
-.contentecran{
-  /* Full height */
-  height: 100vh;
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
 }
+.sombre{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Couleur noire avec 50% d'opacité */
+}
+.content-nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: calc(100vh - var(--content-height)); /* Ajustement dynamique */
+}
+.ecran{
+  border: 5px solid rgb(18, 15, 212);
+  }
+#accueil {
+  margin: 0 auto;
+  height: calc(100vh - var(--content-height) - 10vh);
+  min-height: calc(100vh - var(--content-height) - 10vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
