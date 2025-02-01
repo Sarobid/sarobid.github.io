@@ -38,7 +38,7 @@ body {
 }
 .ecran{
   border: 5px solid rgb(18, 15, 212);
-  }
+}
 #accueil {
   margin: 0 auto;
   height: calc(100vh - var(--content-height) - 10vh);
@@ -48,6 +48,19 @@ body {
   justify-content: center;
   width: 75%;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 767px) {
+  #accueil {
+    margin: 0 auto;
+    height: calc(100vh - var(--content-height) - 10vh);
+    min-height: calc(100vh - var(--content-height) - 10vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 }
 
 
