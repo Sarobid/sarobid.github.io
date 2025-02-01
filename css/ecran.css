@@ -46,21 +46,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 75%;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   #accueil {
-    margin: 0 auto;
-    height: calc(100vh - var(--content-height) - 10vh);
-    min-height: calc(100vh - var(--content-height) - 10vh);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
   }
 }
-
-
