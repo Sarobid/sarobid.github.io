@@ -1,6 +1,6 @@
 ///Fonction ajax
-function ajaxPost(url,data,callbackSucces){
-    $.post(url, data, function(result){
+function ajax(url,callbackSucces){
+    $.get(url, function(result){
         callbackSucces(result);
       });
 }
@@ -18,7 +18,7 @@ function navmenuAfterClick(){
 }
 //Changement contenue
 function changementNavigation(fichier){
-    ajaxPost(fichier,{},(resultHtml)=>{
+    ajax(fichier,(resultHtml)=>{
         document.getElementById("contenueid").innerHTML=resultHtml;
         navmenuAfterClick();
     })
