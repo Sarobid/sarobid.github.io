@@ -27,10 +27,12 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/ecran.css" rel="stylesheet">
+    <link href="css/competence.css" rel="stylesheet">
 </head>
 <style>
     #acceuil .header-carousel-item img {
@@ -65,10 +67,9 @@
             <div class="row gx-0">
                 <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
                     <div class="d-inline-flex align-items-center" style="height: 45px;">
-                        <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>123 Street, New York,
-                            USA</small>
-                        <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</small>
-                        <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@example.com</small>
+                        <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Antananarivo,Madagascar</small>
+                        <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+261 34 12 731 75</small>
+                        <small class="text-light"><i class="fa fa-envelope-open me-2"></i>mbolasaroubidy@gmail.com</small>
                     </div>
                 </div>
                 <div class="col-lg-4 text-center text-lg-end">
@@ -101,9 +102,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0" id="navmenu">
-                        <a href="#acceuil" class="nav-item nav-link active">ACCUEIL</a>
+                        <a href="#accueil" onclick="changementNavigation('accueil.html')" class="nav-item nav-link active">ACCUEIL</a>
                         <a href="#projet" class="nav-item nav-link">PROJET</a>
-                        <a href="#competence" class="nav-item nav-link">COMPETENCE</a>
+                        <a href="#competence" onclick="changementNavigation('competence.html')" class="nav-item nav-link">COMPETENCE</a>
                         <a href="#about" class="nav-item nav-link">À PROPOS</a>
                         <a href="#contact" class="nav-item nav-link">CONTACT</a>
                     </div>
@@ -111,15 +112,10 @@
             </nav>
             <!-- NavBar End -->
         </div>
-
-        <!-- main start -->
-        <!--main end -->
-
-
     </div>
     <div class="content p-3">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12" id="contenueid">
                 <div class="ecran" id="accueil">
                     <div class="row g-5" >
                         <div class="col-12 animated fadeInUp">
@@ -136,15 +132,10 @@
                             </div>
                         </div>
                     </div>
-                    <span class="top"></span>
-                    <span class="right"></span>
-                    <span class="bottom"></span>
-                    <span class="left"></span>
                 </div>
             </div>
         </div>
     </div>
-
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
@@ -156,7 +147,6 @@
             const contentHeightVh = Number(((Number(contentHeight) + Number(navbarHeight)) / Number(windowHeightPx)) * 100).toFixed(0);
             document.documentElement.style.setProperty("--content-height", contentHeightVh + "vh");
         }
-
         window.addEventListener("resize", adjustBorderHeight);
         window.addEventListener("load", adjustBorderHeight);
     </script>
@@ -174,6 +164,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/service.js"></script>
     <script src="assets/js/main.js"></script>
 
 </body>
