@@ -18,6 +18,7 @@ function navmenuAfterClick(){
 }
 //Changement contenue
 function changementNavigation(fichier){
+    //alert(fichier)
     ajax(fichier,(resultHtml)=>{
         document.getElementById("contenueid").innerHTML=resultHtml;
         navmenuAfterClick();
