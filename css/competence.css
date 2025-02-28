@@ -89,10 +89,12 @@ ul.skills li:hover span:before,
 
 .comptype1 {
 	border: 2px solid #2292dd40;
+	color: #2187e7;
 }
 
 .comptype2 {
 	border: 2px solid #1b503d;
+	color: #00d084;
 }
 
 ul.skills2 li:before {
@@ -351,7 +353,6 @@ ul.skills2 li:hover span.sp-react:after {
 
 ul.skills2 li:hover span.sp-angular:after {
 	background: #dd1b16;
-	box-shadow: 0px 0px 10px 1px #dd1b16;
 }
 
 ul.skills2 li:hover span.sp-html:after {
