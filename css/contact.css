@@ -1,0 +1,17 @@
+#contact {
+	margin: 0 auto;
+	height: calc(100vh - var(--content-height) - 10vh);
+	min-height: calc(100vh - var(--content-height) - 10vh);
+	width: 75%;
+	background-color: rgba(0, 0, 0, 0.5);
+	overflow-y: scroll;
+	scrollbar-width: none;
+	/* Firefox */
+	-ms-overflow-style: none;
+	/* Internet Explorer/Edge */
+}
+
+#contact::-webkit-scrollbar {
+	display: none;
+	/* Chrome, Safari */
+}
